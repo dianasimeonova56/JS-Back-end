@@ -1,0 +1,37 @@
+[
+  {
+    "id": "55389749-797d-49a9-a93d-8f6c18460139",
+    "imageUrl": "https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=612x612&w=0&k=20&c=vvM97wWz-hMj7DLzfpYRmY2VswTqcFEKkC437hxm3Cg=",
+    "name": "Pretty Kitty",
+    "breed": "Bombay Cat",
+    "description": "Dominant and aggressive to other cats. Will probably eat you in your sleep. Very cute tho."
+  },
+  {
+    "id": "14389749-127d-49a9-a93d-8f6c18460151",
+    "imageUrl": "https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=612x612&w=0&k=20&c=vvM97wWz-hMj7DLzfpYRmY2VswTqcFEKkC437hxm3Cg=",
+    "name": "Navcho",
+    "breed": "Persian Cat",
+    "description": "A talkative and affectionate cat with striking yellow eyes."
+  },
+  {
+    "id": "25389749-734d-49a9-a93d-8f6c18460115",
+    "imageUrl": "https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=612x612&w=0&k=20&c=vvM97wWz-hMj7DLzfpYRmY2VswTqcFEKkC437hxm3Cg=",
+    "name": "Sisa",
+    "breed": "Siamese Cat",
+    "description": "Loves to cuddle and nap. Requires regular grooming for its luxurious coat."
+  },
+  {
+    "id": "52389749-734d-19a9-a93d-8f6c18460114",
+    "imageUrl": "https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=612x612&w=0&k=20&c=vvM97wWz-hMj7DLzfpYRmY2VswTqcFEKkC437hxm3Cg=",
+    "name": "Garry",
+    "breed": "Bombay Cat",
+    "description": "Mysterious and elegant. Often found lounging in sunny spots."
+  },
+  {
+    "id": "5c89f6f1-ce49-4514-b7b4-de459f135357",
+    "name": "Tsotsolanko",
+    "description": "Gentle and loving. Loves to be held and purrs loudly when happy.",
+    "imageUrl": "https://as2.ftcdn.net/v2/jpg/05/80/61/41/1000_F_580614175_LW6mydM9ii6KEwPjF8aAlPqmlj21YKiC.jpg",
+    "breed": "Fluffy Cat"
+  }
+]
