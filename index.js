@@ -7,6 +7,7 @@ import homePage from './views/home/index.html.js'
 import addBreedPage from './views/addBreed.html.js'
 import addCatPage from './views/addCat.html.js'
 import editCatPage from './views/editCat.html.js'
+import catShelterHtml from './views/catShelter.html.js';
 
 // will be transformed into object
 let cats = [];
@@ -36,7 +37,7 @@ const server = http.createServer((req, res) => {
         req.on('end', () => {
             // конвертираме данните към обект, който трябва да се добави в масива cats
             const data = new URLSearchParams(body);
-
+            console.log(data);
 
             //restarted when server is restarted
 
@@ -57,15 +58,28 @@ const server = http.createServer((req, res) => {
                 })
 
                 saveBreeds();
-            } else if (url === `/cats/edit-breed/${id}`) {
-                let modified = {...Object.fromEntries(data.entries())}
+            } else if (url === `/cats/edit-cat/${id}`) {
+                let modified = { ...Object.fromEntries(data) }
                 console.log(modified);
-                
+
                 cats[cats.findIndex(c => c.id == id)] = modified
+
+                saveCats()
+            } else if (url === `/cats/edit-cat/${id}`) {
+                let modified = { ...Object.fromEntries(data) }
+                console.log(modified);
+
+                cats[cats.findIndex(c => c.id == id)] = modified
+
+                saveCats()
+            }else if (url === `/cats/shelter-cat/${id}`) {
+                let toShelter = { ...Object.fromEntries(data) }
+                console.log(toShelter);
+
+                cats = cats.filter(cat => cat.id != id);
                 
                 saveCats()
             }
-
 
             //redirect to main page
             //301 - redirect?
@@ -109,6 +123,10 @@ const server = http.createServer((req, res) => {
         case `/cats/edit-cat/${id}`:
             initCat(id);
             res.write(editCatPage(cat, breeds));
+            break;
+        case `/cats/shelter-cat/${id}`:
+            initCat(id);
+            res.write(catShelterHtml(cat));
             break;
 
         default:
